@@ -43,7 +43,8 @@ public class changeGiver {
 			
 		}
 		
-		//DecimalFormat  = new DecimalFormat ("$#0.00");
+	
+		DecimalFormat d = new DecimalFormat ("$#0.00");
 		
 		double change = (input_a  - input_b);
 		
@@ -51,8 +52,8 @@ public class changeGiver {
 		
 		
 		
-		System.out.println("your change is " + change);
-		
+		System.out.println("your change is " + d.format(change));
+	
 		System.out.println ("\n Number of quarters to give:" + co.quarters (change));
 		System.out.println ("\n Number of dime to give:" + co.dimes (change));
 		System.out.println ("\n Number of nickels to give:" + co.nickels (change));
